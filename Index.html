@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js" defer></script>
-    <title>Evaluation manip du dom</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <button id="toggle1">...</button>
-        <ul id="navHeader">
-          <li id="one"><a href="#">Menu 1</a></li>
-          <li id="two"><a href="#">Menu 2</a></li>
-          <li id="three"><a href="#">Menu 3</a></li>
-          <li id="four"><a href="#">Menu 4</a></li>
-          <li id="five"><a href="#">Menu 5</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <!--..........................Menu1..........................-->
-    <!-- le survol sur un lien du tableau affiche une image en dessous -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./app.js" defer></script>
+  <title>Evaluation manip du dom</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button id="toggle1">...</button>
+      <ul id="navHeader">
+        <li id="one"><a href="#">Menu 1</a></li>
+        <li id="two"><a href="#">Menu 2</a></li>
+        <li id="three"><a href="#">Menu 3</a></li>
+        <li id="four"><a href="#">Menu 4</a></li>
+        <li id="five"><a href="#">Menu 5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--..........................Menu1..........................-->
+  <!-- le survol sur un lien du tableau affiche une image en dessous -->
   <div id="container">
     <div id="menu1">
       <h2>Menu 1</h2>
@@ -51,21 +53,21 @@
     <div id="menu2">
       <h2>Menu 2</h2>
       <div id="Input">
-      <label for="name">Nom</label><br/>
-      <input type="text" id="entrer1"/><br/>
+        <label for="name">Nom</label><br />
+        <input type="text" id="entrer1" /><br />
 
-      <label for="name">Prénom</label><br/>
-      <input type="text" id="entrer2"/>
-      <br>
-      <button id="addtable">Add Table</button>
-    </div>
+        <label for="name">Prénom</label><br />
+        <input type="text" id="entrer2" />
+        <br>
+        <button id="addtable">Add Table</button>
+      </div>
       <table id="tableMenu2">
         <th>Table</th>
         <tr>
-  
+
         </tr>
         <tr>
-  
+
         </tr>
       </table>
     </div>
@@ -115,23 +117,23 @@
             <ul>
               Value 1
           </li>
-            </ul>
+          </ul>
           <li>
             <ul>
               Value 2
           </li>
-            </ul>
+          </ul>
           <li>
             <ul>
               Value 3
-           </li>
-            </ul>
+          </li>
+          </ul>
           <li>
             <ul>
               Value 4
           </li>
-            </ul>
-      </div>
+          </ul>
+        </div>
       </div>
       <div class="buttonMenu4">
         <button id="btnInputup">up</button>
@@ -164,21 +166,20 @@
         <label for="Option 2">Option 4</label>
       </div>
 
-<!--..............................InputTypeRadio....................................-->
-<legend>Select the button:</legend>
-<div class="radio1">
-  <input type="radio" id="huey" name="radio" value="huey" checked />
-  <label for="huey">div</label>
-</div>
+      <!--..............................InputTypeRadio....................................-->
+      <legend>Select the button:</legend>
+      <div class="radio1">
+        <input type="radio" id="huey" name="radio" value="huey" checked />
+        <label for="huey">div</label>
+      </div>
 
-<div class="radio2">
-  <input type="radio" id="opt" name="radio" value="opt" />
-  <label for="opt">opt</label>
-</div>
-</div>
-
-<div id="result"></div>
-
+      <div class="radio2">
+        <input type="radio" id="opt" name="radio" value="opt" />
+        <label for="opt">opt</label>
+        <div id="result"></div>
+      </div>
+    </div>
   </div>
-  </body>
+</body>
+
 </html>
