@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Evaluation manip du dom</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="toggle1">...</button>
+        <ul id="navHeader">
+          <li id="one"><a href="#">Menu 1</a></li>
+          <li id="two"><a href="#">Menu 2</a></li>
+          <li id="three"><a href="#">Menu 3</a></li>
+          <li id="four"><a href="#">Menu 4</a></li>
+          <li id="five"><a href="#">Menu 5</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!--..........................Menu1..........................-->
+    <!-- le survol sur un lien du tableau affiche une image en dessous -->
+  <div id="container">
+    <div id="menu1">
+      <h2>Menu 1</h2>
+      <table id="menuOne">
+        <tr>
+          <td id="link">Liens 1</td>
+          <td id="l2">Liens 2</td>
+          <td id="l3">Liens 3</td>
+        </tr>
+        <tr>
+          <td id="l4">Liens 4</td>
+          <td id="l5">Liens 5</td>
+          <td id="l6">Liens 6</td>
+        </tr>
+        <tr>
+          <td id="l7">Liens 7</td>
+          <td id="l8">Liens 8</td>
+          <td id="l9">Liens 9</td>
+        </tr>
+      </table>
+      <img src="./img/bx-wifi-off.svg" id="l1">
+    </div>
+    <!--..............................Menu2....................................-->
+    <!-- On remplit les deux inputs, le clic sur le bouton remplitle tableau situé en dessous -->
+    <div id="menu2">
+      <h2>Menu 2</h2>
+      <div id="Input">
+      <label for="name">Nom</label><br/>
+      <input type="text" id="entrer1"/><br/>
+
+      <label for="name">Prénom</label><br/>
+      <input type="text" id="entrer2"/>
+      <br>
+      <button id="addtable">Add Table</button>
+    </div>
+      <table id="tableMenu2">
+        <th>Table</th>
+        <tr>
+  
+        </tr>
+        <tr>
+  
+        </tr>
+      </table>
+    </div>
+    <!--..............................Menu3....................................-->
+    <!-- la selection d'un itemdans le menu déroulantapplique le stylecorrespondant auparagraphe du dessous -->
+    <div id="menu3">
+      <h2>Menu 3</h2>
+      <label for="styleSelect">Select to styles :</label><br />
+
+      <select name="styleSelect" id="styleSelect" onclick="colortext()">
+        <option value="text1">Styles 1</option>
+        <option value="text2">Styles 2</option>
+        <option value="text3">Styles 3</option>
+      </select>
+
+      <legend>voci mon paragrap</legend>
+      <p id="parag1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aliquid
+        adipisci repellendus, quidem, porro quasi veritatis commodi vel debitis
+        minus ducimus fugit, odio ipsa facilis expedita officiis repellat at?
+        Officia. Enim, perferendis dolorum culpa minima nisi placeat ipsam,
+      </p>
+    </div>
+    <!--..............................Menu4....................................-->
+    <!-- Le clic sur UP ou DOWNmodifie l'ordre de liste UL ci-après-->
+    <div id="menu4">
+      <h2>Menu 4</h2>
+      <div class="Menu4List">
+        <div class="list1">
+          <li>
+            <ul>
+              Value 1
+            </ul>
+            <ul>
+              Value 2
+            </ul>
+            <ul>
+              Value 3
+            </ul>
+            <ul>
+              Value 4
+            </ul>
+          </li>
+        </div>
+        <div class="list2">
+          <li>
+            <ul>
+              Value 1
+          </li>
+            </ul>
+          <li>
+            <ul>
+              Value 2
+          </li>
+            </ul>
+          <li>
+            <ul>
+              Value 3
+           </li>
+            </ul>
+          <li>
+            <ul>
+              Value 4
+          </li>
+            </ul>
+      </div>
+      </div>
+      <div class="buttonMenu4">
+        <button id="btnInputup">up</button>
+        <button id="btnInputdown">down</button>
+      </div>
+    </div>
+    <!--..............................Menu5....................................-->
+    <!-- Le clic sur un boutonradio "div" ou "opt"récupère la liste desitems cochés etgénère soit : - un div - un drop down avec les items cochés -->
+    <div id="menu5">
+      <h2>Menu 5</h2>
+
+      <legend>Quelle option veux-tu:</legend>
+      <div>
+        <input type="checkbox" id="Option 1" name="Option 1" checked />
+        <label for="Option 1">Option 1</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="Option 2" name="Option 2" />
+        <label for="Option 2">Option 2</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="Option 2" name="Option 2" />
+        <label for="Option 2">Option 3</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="Option 2" name="Option 2" />
+        <label for="Option 2">Option 4</label>
+      </div>
+
+<!--..............................InputTypeRadio....................................-->
+<legend>Select the button:</legend>
+<div class="radio1">
+  <input type="radio" id="huey" name="radio" value="huey" checked />
+  <label for="huey">div</label>
+</div>
+
+<div class="radio2">
+  <input type="radio" id="opt" name="radio" value="opt" />
+  <label for="opt">opt</label>
+</div>
+</div>
+
+<div id="result"></div>
+
+  </div>
+  </body>
+</html>

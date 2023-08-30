@@ -1,0 +1,209 @@
+body {
+  background-color: rgba(128, 128, 128, 0.432);
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  /* grid-template-columns: 20% 20% 20% 20% 20%; */
+  grid-template-rows: 20% 80%;
+  
+}
+
+#container{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-row: 2;
+
+}
+
+/* ..........................MenuNav.......................... */
+#navHeader{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20% ;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 10% 80% 10%;
+  grid-row: 2;
+  margin: auto;
+ 
+}
+button{
+    grid-row: 2;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+
+}
+nav{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: 4px solid black;
+}
+
+header{
+    width: 100%;
+    height: 80%;
+}
+
+#one {
+    list-style-type:none;
+  grid-column: 1;
+  grid-row: 2;
+  margin: auto;
+  
+}
+
+#two {
+    list-style-type:none;
+  grid-column: 2;
+  grid-row: 2;
+  margin: auto;
+  
+}
+
+#three {
+    list-style-type:none;
+  grid-column: 3;
+  grid-row: 2;
+  margin: auto;
+ 
+}
+
+#four {
+    list-style-type:none;
+  grid-column: 4;
+  grid-row: 2;
+  margin: auto;
+  
+}
+
+#five {
+    list-style-type:none;
+  grid-column: 5;
+  grid-row: 2;
+  margin: auto;
+  
+}
+
+/* ..........................BodymydifferentsMenu.......................... */
+#menu1 {
+  border: 3px solid black;
+  margin: 1%;
+  width: 80%;
+  height: 80%;
+  grid-column: 1;
+  
+  
+}
+
+#menu2 {
+  border: 3px solid black;
+  margin: 1%;
+  width: 80%;
+  height: 80%;
+  grid-column: 2;
+  
+}
+
+#menu3 {
+  border: 3px solid black;
+  margin: 1%;
+  width: 80%;
+  height: 80%;
+  grid-column: 3;
+  
+}
+
+#menu4 {
+  border: 3px solid black;
+  margin: 1%;
+  width: 80%;
+  height: 80%;
+  grid-column: 4;
+  
+}
+
+#menu5 {
+  border: 3px solid black;
+  margin: 1%;
+  width: 80%;
+  height: 80%;
+  grid-column: 5;
+ 
+}
+
+/* ..........................Menu1.......................... */
+#menu1 {
+  display: grid;
+  grid-template-rows: 10% 30% 60%;
+}
+
+h2{
+  grid-row: 1;
+}
+#menuOne{
+  margin: 10%;
+  grid-row: 2;
+  border: 1px solid black;
+}
+
+
+/* ..........................Menu2.......................... */
+#menu2{
+    display: grid;
+    grid-template-rows: 10% 30% 60%;
+}
+
+#Input{
+  grid-row: 2;
+  width: 100%;
+}
+#tableMenu2{
+    width: 100%;
+    grid-row: 3;
+}
+
+.tabletwo {
+  border: 1px solid black;
+  width: 50%;
+  margin: 10%;
+}
+/* ..........................Menu3.......................... */
+
+
+/* ..........................Menu4.......................... */
+
+.Menu4List {
+    display: flex;
+    justify-content: center;
+}
+.list1{
+    list-style-type:none;
+    width: 50%;
+}
+
+.list2{
+    list-style-type:none;
+    width:50%;
+}
+
+.buttonMenu4{
+    padding: 20%;
+}
+
+/* ..........................Menu5.......................... */
+
+.radio1{
+    float: left;
+    margin: 5%;
+}
+
+.radio2{
+    float: left;
+    margin: 5%;
+}
